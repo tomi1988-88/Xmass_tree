@@ -60,4 +60,6 @@ class Postcard:
 
     def __str__(self):
         return "\n".join(["".join(line) for line in self.array])
-    
+
+    def __repr__(self):
+        return f"Postcard({self.cols}, {self.rows})"

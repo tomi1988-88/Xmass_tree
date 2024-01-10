@@ -2,6 +2,7 @@ from xmass_funcs import replace_with_interval
 
 
 def tree_1(lines: int) -> str:
+    """Simplest tree"""
     stars = 1
     spaces = lines - 1  # Because a line starts with index 0.
 
@@ -16,6 +17,7 @@ def tree_1(lines: int) -> str:
 
 
 def tree_2(lines: int) -> str:
+    """Tree with a bow-star and a trunk"""
     stars = 1
     spaces = lines
 
@@ -32,6 +34,9 @@ def tree_2(lines: int) -> str:
 
 
 def tree_3(lines: int, interval: int) -> str:
+    """Tree with a bow-star and a trunk and Christmas balls. Christmas balls are placed in fixed places.
+    Interval == 1 means all balls are on the tree, interval == 2 means every second ball is on the tree,
+    interval == 3 means every third one, etc."""
     stars = 1
     spaces = lines
 
@@ -71,3 +76,6 @@ class TreeObj:
 
     def __str__(self):
         return self.tree_raw
+
+    def __repr__(self):
+        return f"TreeObj({self.index}, {self.lines}, {self.interval}, {self.y}, {self.x})"
