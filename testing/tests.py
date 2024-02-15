@@ -5,13 +5,13 @@ from xmass_trees import (tree_1,
                          TreeObj)
 from xmass_postcard import Postcard
 from testing.correct_trees import (CORRECT_TREE_1,
-                           CORRECT_TREE_2,
-                           CORRECT_TREE_3_1,
-                           CORRECT_TREE_3_2,
-                           CORRECT_POSTCARD)
+                                   CORRECT_TREE_2,
+                                   CORRECT_TREE_3_1,
+                                   CORRECT_TREE_3_2,
+                                   CORRECT_POSTCARD)
+
 
 class TestTree1(unittest.TestCase):
-
 
     def test_tree_1(self):
         t1 = tree_1(5)

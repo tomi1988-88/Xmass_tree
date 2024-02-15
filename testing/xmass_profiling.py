@@ -1,10 +1,10 @@
 import cProfile
 import timeit
-from Xmass_tree import tree_1
-from Xmass_tree import tree_2
-from Xmass_tree import tree_3
-from Xmass_tree import TreeObj
-from Xmass_tree import replace_with_interval
+from xmass_trees import tree_1
+from xmass_trees import tree_2
+from xmass_trees import tree_3
+from xmass_trees import TreeObj
+from xmass_funcs import replace_with_interval
 
 
 def tree_1_lst(lines: int) -> str:
